@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yexin.bishe.activity.MainActivity">
+
+    <!-- 1 -->
+    <include layout="@layout/titlebar" />
+
+    <!-- 2 -->
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 3 -->
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#11000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:id="@+id/radio_bdyy"
+            style="@style/radiostyle"
+            android:drawableTop="@drawable/rb_bdyy_pic_sele"
+            android:text="本地音乐" />
+
+        <RadioButton
+            android:id="@+id/radio_bdsp"
+            style="@style/radiostyle"
+            android:drawableTop="@drawable/rb_bdsp_pic_sele"
+            android:text="本地视频" />
+
+
+        <RadioButton
+            android:id="@+id/radio_wlsp"
+            style="@style/radiostyle"
+            android:drawableTop="@drawable/rb_wlsp_pic_sele"
+            android:text="网络视频" />
+
+        <RadioButton
+            android:id="@+id/radio_wlyy"
+            style="@style/radiostyle"
+            android:drawableTop="@drawable/rb_wlyy_pic_sele"
+            android:text="我的收藏" />
+
+    </RadioGroup>
+
+
+</LinearLayout>

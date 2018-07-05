@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.yexin.bishe.activity.LauncherActivity">
+
+
+    <ImageView
+        android:id="@+id/launcher_icon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/fjut" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/launcher_icon"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在启动中..."
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/launcher_skip"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/launcher_skip"
+        android:gravity="center_horizontal|center_vertical"
+        android:onClick="toMainActivity"
+        android:text="跳过"
+        android:textColor="@android:color/darker_gray" />
+</RelativeLayout>
+
+
+

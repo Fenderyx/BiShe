@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="#55000000"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:visibility="gone">
+
+    <ProgressBar
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_vertical" />
+
+    <TextView
+        android:id="@+id/tv_buffer_net_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:text="您的网速过慢，请暂停缓冲一下..." />
+
+</LinearLayout>
